@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
-import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
+import React, { useState, useEffect } from 'react';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 const App: React.FC = () => {
-  const [todos, setTodos] = useState<{ id: number; text: string; completed: boolean }[]>([]);
+  const [todos, setTodos] = useState<
+    { id: number; text: string; completed: boolean }[]
+  >([]);
   const [dateTime, setDateTime] = useState(new Date());
 
   // Update time every second
@@ -17,11 +19,15 @@ const App: React.FC = () => {
   };
 
   const toggleTodo = (id: number) => {
-    setTodos(todos.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo)));
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      )
+    );
   };
 
   const deleteTodo = (id: number) => {
-    setTodos(todos.filter(todo => todo.id !== id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
