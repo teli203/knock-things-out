@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
-
 const App: React.FC = () => {
   const [todos, setTodos] = useState<{ id: number; text: string; completed: boolean }[]>([]);
   const [dateTime, setDateTime] = useState(new Date());
@@ -30,7 +29,7 @@ const App: React.FC = () => {
       <h1 className="text-center">To-Do List</h1>
       <p className="text-center">{dateTime.toLocaleString()}</p>
       <TodoForm addTodo={addTodo} />
-      <TodoList todo={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   );
 };
