@@ -27,7 +27,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container mt-4">
-      <h1 className="text-center">To-Do List</h1>
+      <h1 className="text-center">Knock Things Out</h1>
       <p className="text-center">{dateTime.toLocaleString()}</p>
       <Timer />
       <TodoForm addTodo={addTodo} />
