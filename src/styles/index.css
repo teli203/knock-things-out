@@ -1,0 +1,14 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(248, 248, 245, 0.738);
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: rgba(113, 218, 247, 0.571);
+    text-decoration-thickness: .6rem;
+    text-underline-offset: .65rem;
+    margin-block: 2.5rem;
+}
+
+
