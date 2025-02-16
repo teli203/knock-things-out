@@ -24,6 +24,7 @@ const Notes: React.FC = () => {
   return (
     <div className="mt-4">
       <h3>Notes</h3>
+      <h6>(Break down tasks in details)</h6>
       <textarea
         className="form-control"
         rows={4}
