@@ -30,7 +30,7 @@ const App: React.FC = () => {
     <div className="container mt-4">
       <Background page="home" />
       <h1 className="text-center">Knock Things Out</h1>
-      <p className="text-center">{dateTime.toLocaleString()}</p>
+      <p className="text-center" id="date">{dateTime.toLocaleString()}</p>
       <Timer />
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
