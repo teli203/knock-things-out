@@ -43,7 +43,7 @@ const Notes: React.FC = () => {
             ["clean"], // Remove formatting
           ],
         }}
-      />
+        id="mt4"/>
 
       <div className="mt-2">
         <button className="btn btn-primary me-2" onClick={handleSubmit}>

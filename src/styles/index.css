@@ -23,7 +23,7 @@ h1 {
 h6 {
   color: rgba(113, 218, 247, 0.6);
 }
-
+/* Current Date & Time */
 #date {
   background: rgba(113, 218, 247, 0.314);
   padding: 0.7rem;
@@ -31,6 +31,7 @@ h6 {
   border-radius: 9%;
 }
 
+/* Timer */
 #mb3 {
   background: rgba(113, 218, 247, 0.314);
   color: rgb(5, 5, 5);
@@ -44,11 +45,39 @@ h6 {
   background: #06060608;
 }
 
-.form-control {
+/* Task list Container & Quill */
+.form-control,
+#mt4 {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
   background: rgba(216, 216, 216, 0.278);
   border: 2px solid rgb(251, 248, 248);
   border-radius: 9%;
   box-shadow: 5px 5px 5px 3px rgba(245, 245, 245, 0.53);
+}
+
+/* Quill Toolbar Background */
+.ql-toolbar {
+  background-color: #f0f0f0;
+  margin-top: 0.9rem;
+  border-radius: 9%;
+}
+
+/* Quill Toolbar Container */
+.ql-container {
+  color: #f0f0f0;
+  border-radius: 9%;
+  min-height: 120px;
+}
+
+/* Quill Customize header dropdown */
+.ql-toolbar .ql-picker-label {
+  color: #383737;
+  font-weight: bold;
+}
+
+/* Placeholder text color */
+.form-control::placeholder {
+  color: #f0f0f0;
+  font-style: italic;
 }
