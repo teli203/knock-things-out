@@ -3,6 +3,8 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import Notes from "./components/Notes.tsx";
 import Timer from "./components/Timer.tsx";
+import Background from "./components/Background.tsx";
+import ErrorBoundary from "./components/ErrorBoundary"; // Import ErrorBoundary
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<{ id: number; text: string; completed: boolean }[]>([]);
@@ -27,12 +29,17 @@ const App: React.FC = () => {
 
   return (
     <div className="container mt-4">
+      <Background page="home" />
       <h1 className="text-center">Knock Things Out</h1>
-      <p className="text-center">{dateTime.toLocaleString()}</p>
+      <p className="text-center" id="date">{dateTime.toLocaleString()}</p>
       <Timer />
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-      <Notes />
+      
+      {/* Wrap Notes inside ErrorBoundary */}
+      <ErrorBoundary>
+        <Notes />
+      </ErrorBoundary>
     </div>
   );
 };

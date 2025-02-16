@@ -1,0 +1,54 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+#date {
+  color: rgba(245, 248, 247, 0.868);
+}
+
+h1 {
+  color: rgba(248, 248, 245, 0.738);
+  text-decoration: underline;
+  text-decoration-color: rgba(113, 218, 247, 0.571);
+  text-decoration-thickness: 0.6rem;
+  text-underline-offset: 0.65rem;
+  margin-block: 2.5rem;
+}
+
+h6 {
+  color: rgba(113, 218, 247, 0.6);
+}
+
+#date {
+  background: rgba(113, 218, 247, 0.314);
+  padding: 0.7rem;
+  border: 2px solid rgb(251, 248, 248);
+  border-radius: 9%;
+}
+
+#mb3 {
+  background: rgba(113, 218, 247, 0.314);
+  color: rgb(5, 5, 5);
+  padding: 2rem;
+  border: 2px solid rgb(251, 248, 248);
+  border-radius: 9%;
+  box-shadow: 5px 5px 5px 3px rgba(245, 245, 245, 0.53);
+}
+
+#mb3:hover {
+  background: #06060608;
+}
+
+.form-control {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  background: rgba(216, 216, 216, 0.278);
+  border: 2px solid rgb(251, 248, 248);
+  border-radius: 9%;
+  box-shadow: 5px 5px 5px 3px rgba(245, 245, 245, 0.53);
+}

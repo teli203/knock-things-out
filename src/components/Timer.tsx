@@ -29,7 +29,7 @@ const Timer: React.FC = () => {
   };
 
   return (
-    <div className="text-center mb-3">
+    <div className="text-center mb-3" id="mb3">
       <h3>Timer: {formatTime(timeLeft)}</h3>
       <button className="btn btn-primary me-2" onClick={increaseTime}>
         + 30 min
