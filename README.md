@@ -1,3 +1,7 @@
+<img width="1402" alt="Image" src="https://github.com/user-attachments/assets/d130ba09-dbd2-4c50-9425-041a29b3d8d3" />
+- Visit the 
+
+
 # Knock Things Out
 is a simple and sleek to-do list app built with React, Vite, and TypeScript. This app helps you organize your tasks efficiently with a clean interface and dynamic features.
 
