@@ -3,7 +3,8 @@ body {
   margin: 2rem;
 }
 
-.img-before, .img-after {
+.img-before,
+.img-after {
   width: 50px; /* Adjust size */
   max-height: 3.5rem;
 }
@@ -28,13 +29,13 @@ h1 {
 h6 {
   color: rgba(113, 218, 247, 0.6);
 }
- .btn {
+.btn {
   border: 2px solid rgba(216, 240, 246, 0.703);
   border-radius: 9%;
 }
 
 /* Current Date & Time */
- #date {
+#date {
   background: rgba(113, 218, 247, 0.314);
   padding: 0.7rem;
   margin-top: 2rem;
@@ -85,7 +86,7 @@ h6 {
 /* Quill section AKA Notes */
 .ql-container {
   min-height: 120px;
-  color:rgb(251, 248, 248);
+  color: rgb(251, 248, 248);
   background: rgba(216, 216, 216, 0.278);
   border: 2px solid rgb(251, 248, 248);
   border-radius: 9%;
@@ -111,8 +112,10 @@ h6 {
   font-size: 15px;
 }
 
-@media (max-width: 576px) { /* Small screens */
-  .img-before, .img-after {
+@media (max-width: 576px) {
+  /* Small screens */
+  .img-before,
+  .img-after {
     width: 30px;
   }
   h1 {
@@ -120,4 +123,3 @@ h6 {
     text-decoration-thickness: 0.2rem;
   }
 }
-

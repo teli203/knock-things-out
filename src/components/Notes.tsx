@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css"; // Default Quill theme
+import React, { useState } from 'react';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css'; // Default Quill theme
 
 const Notes: React.FC = () => {
-  const [note, setNote] = useState("");
+  const [note, setNote] = useState('');
   const [submittedNotes, setSubmittedNotes] = useState<
     { id: number; text: string }[]
   >([]);
@@ -11,12 +11,12 @@ const Notes: React.FC = () => {
   const handleSubmit = () => {
     if (note.trim()) {
       setSubmittedNotes([...submittedNotes, { id: Date.now(), text: note }]);
-      setNote(""); // Clear input after submission
+      setNote(''); // Clear input after submission
     }
   };
 
   const handleClear = () => {
-    setNote("");
+    setNote('');
   };
 
   const handleDelete = (id: number) => {
@@ -37,12 +37,12 @@ const Notes: React.FC = () => {
         modules={{
           toolbar: [
             [{ header: [1, 2, false] }], // Header size
-            ["bold", "italic", "underline"], // Formatting
-            [{ list: "ordered" }, { list: "bullet" }], // Bullet points
+            ['bold', 'italic', 'underline'], // Formatting
+            [{ list: 'ordered' }, { list: 'bullet' }], // Bullet points
             [{ color: [] }, { background: [] }], // Text & background colors
-            ["clean"], // Remove formatting
+            ['clean'], // Remove formatting
           ],
-        }} 
+        }}
       />
       <div className="mt-2">
         <button className="btn btn-secondary me-2" onClick={handleSubmit}>
