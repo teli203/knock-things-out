@@ -44,7 +44,6 @@ const Notes: React.FC = () => {
           ],
         }} 
       />
-
       <div className="mt-2">
         <button className="btn btn-secondary me-2" onClick={handleSubmit}>
           Submit
