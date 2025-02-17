@@ -3,6 +3,11 @@ body {
   margin: 2rem;
 }
 
+.img-before, .img-after {
+  width: 50px; /* Adjust size */
+  max-height: 3.5rem;
+}
+
 h2,
 h3,
 h4,
@@ -32,6 +37,7 @@ h6 {
  #date {
   background: rgba(113, 218, 247, 0.314);
   padding: 0.7rem;
+  margin-top: 2rem;
   border: 2px solid rgb(251, 248, 248);
   border-radius: 9%;
 }
@@ -103,5 +109,15 @@ h6 {
   color: rgba(249, 246, 246) !important; /* Darken placeholder text */
   font-style: italic;
   font-size: 15px;
+}
+
+@media (max-width: 576px) { /* Small screens */
+  .img-before, .img-after {
+    width: 30px;
+  }
+  h1 {
+    font-size: 15px;
+    text-decoration-thickness: 0.2rem;
+  }
 }
 
