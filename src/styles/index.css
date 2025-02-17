@@ -122,4 +122,7 @@ h6 {
     font-size: 15px;
     text-decoration-thickness: 0.2rem;
   }
+  #timer {
+    margin: 2px;
+  }
 }

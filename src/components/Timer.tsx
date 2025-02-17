@@ -31,10 +31,10 @@ const Timer: React.FC = () => {
   return (
     <div className="text-center mb-3" id="mb3">
       <h3>Timer: {formatTime(timeLeft)}</h3>
-      <button className="btn btn-secondary me-2" onClick={increaseTime}>
+      <button className="btn btn-secondary me-2" onClick={increaseTime} id="timer">
         + 30 min
       </button>
-      <button className="btn btn-secondary me-2" onClick={decreaseTime}>
+      <button className="btn btn-secondary me-2" onClick={decreaseTime} id="timer">
         - 5 min
       </button>
       <button
@@ -43,7 +43,7 @@ const Timer: React.FC = () => {
       >
         {isRunning ? 'Pause' : 'Start'}
       </button>
-      <button className="btn btn-secondary" onClick={() => setTimeLeft(1500)}>
+      <button className="btn btn-secondary" onClick={() => setTimeLeft(1500)} id="timer">
         Reset
       </button>
     </div>
