@@ -46,10 +46,10 @@ const Notes: React.FC = () => {
         id="mt4"/>
 
       <div className="mt-2">
-        <button className="btn btn-primary me-2" onClick={handleSubmit}>
+        <button className="btn btn-secondary me-2" onClick={handleSubmit}>
           Submit
         </button>
-        <button className="btn btn-secondary" onClick={handleClear}>
+        <button className="btn btn-outline-secondary" onClick={handleClear}>
           Clear
         </button>
       </div>

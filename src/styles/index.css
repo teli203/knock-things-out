@@ -23,8 +23,16 @@ h1 {
 h6 {
   color: rgba(113, 218, 247, 0.6);
 }
+
 /* Current Date & Time */
 #date {
+ .btn {
+  border: 2px solid rgba(216, 240, 246, 0.703);
+  border-radius: 9%;
+}
+
+/* Current Date & Time */
+ #date {
   background: rgba(113, 218, 247, 0.314);
   padding: 0.7rem;
   border: 2px solid rgb(251, 248, 248);
