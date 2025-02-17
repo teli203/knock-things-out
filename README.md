@@ -1,3 +1,17 @@
+# Knock Things Out
+is a simple and sleek to-do list app built with React, Vite, and TypeScript. This app helps you organize your tasks efficiently with a clean interface and dynamic features.
+
+## Features
+- Create Tasks: Add tasks with a title and description to keep track of important things to do.
+- Task Completion: Mark tasks as completed with a simple click, giving you a clear view of your progress.
+- Notes: Add additional notes to tasks for more context or details.
+- Real-Time Date/Time: Displays the current date and time, helping you stay on top of deadlines and tasks.
+## Tech Stack
+- React: A JavaScript library for building user interfaces.
+- Vite: A fast build tool for modern web projects.
+- TypeScript: A superset of JavaScript that adds static typing for a more reliable development experience.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
