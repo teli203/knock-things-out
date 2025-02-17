@@ -42,7 +42,7 @@ const Notes: React.FC = () => {
             [{ color: [] }, { background: [] }], // Text & background colors
             ["clean"], // Remove formatting
           ],
-        }}
+        }} 
       />
 
       <div className="mt-2">

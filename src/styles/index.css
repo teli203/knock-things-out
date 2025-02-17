@@ -49,6 +49,7 @@ h6 {
   background: #06060608;
 }
 
+/* Form Control AKA Task List */
 .form-control {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
@@ -57,3 +58,50 @@ h6 {
   border-radius: 9%;
   box-shadow: 5px 5px 5px 3px rgba(245, 245, 245, 0.53);
 }
+
+/* Input field focus effect */
+.form-control:focus {
+  border-color: rgba(113, 218, 247, 0.571); /* Darker blue */
+  box-shadow: 0 0 5px 5px rgba(113, 218, 247, 0.571);
+  outline: none;
+}
+
+/* Placeholder text color */
+.form-control::placeholder {
+  color: #fefbfb;
+  font-style: italic;
+}
+
+.form-control:focus::placeholder {
+  color: rgb(43, 42, 42); /* Adjust placeholder color on focus */
+}
+
+/* Quill section AKA Notes */
+.ql-container {
+  min-height: 120px;
+  color:rgb(251, 248, 248);
+  background: rgba(216, 216, 216, 0.278);
+  border: 2px solid rgb(251, 248, 248);
+  border-radius: 9%;
+  box-shadow: 5px 5px 5px 3px rgba(245, 245, 245, 0.53);
+}
+
+/* Toolbar Background */
+.ql-toolbar {
+  background-color: #f0f0f0; /* Light gray */
+  border-radius: 9%;
+  padding: 5px;
+}
+
+/* Customize header dropdown */
+.ql-toolbar .ql-picker-label {
+  color: rgb(70, 69, 69);
+  font-weight: bold;
+}
+
+.ql-editor::before {
+  color: rgba(249, 246, 246) !important; /* Darken placeholder text */
+  font-style: italic;
+  font-size: 15px;
+}
+
